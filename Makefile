@@ -6,7 +6,7 @@ default:
 	@echo "ssh"
 
 install:
-	rvm use 1.9.2@squeeze64_puppet27 --create
+	gem install bundler
 	bundle install
 	bundle exec vagrant box add squeeze64_puppet27 http://andrew.mcnaughty.com/downloads/squeeze64_puppet27.box
 	bundle exec vagrant init squeeze64_puppet27
